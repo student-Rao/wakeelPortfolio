@@ -2,26 +2,190 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
+
+.navbar{
+  height: 80px;
+  width: 100%;
+  background-color: #1B1B1B;
+  border-bottom: 2px solid black;
+}
+.navButtons{
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+ align-items: end;
+
+}
+#logo{
+  margin-left: 40px;
+  font-size: 30px;
+}
+.navButtons li{
+  margin-right: 40px;
+  margin-top: 15px;
+  color:#9C9C9C;
+  font-size: 20px;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+
+.navButtons li:first-child{
+  margin-right: auto;
+}
+
+#menuicon{
+  font-size: 25px;
+  display: none;
+
+}
+
+.navMobileButtons{
+  position: fixed;
+  right: 0%;
+  top: 0%;
+  height: 50vh;
+  width:80%;
+  padding: 30px 20px;
+  display: flex;
+  gap: 30px;
+  flex-direction: column;
+  justify-content: flex-start;
+  color:#9C9C9C ;
+  background-color:#1B1B1B ;
+  font-size: 20px;
+  display: none;
+}
+#crossicon{
+  font-size: 26px;
+}
+
+
+@media only screen and (max-width:768px){
+  #menuicon{
+    display: flex;
+    color:#9C9C9C ;
+  }
+  .laptopbtn{
+    display: none;
+  }
+  
+  
+}
+/* NAVBAR SECTION END */
+
+/* MAIN SECTION PART start */
+.main{
+  height: 100vh;
+  width: 100%;
+  background-color: #080808;
+  display: flex;
+  gap: 30px;
+  justify-content: center;
+  align-items: center;
+}
+
+.maintextsec{
+ height: 306px;
+ width: 538px;
+ /* background-color: #9C9C9C; */
+}
+.maintextsec span{
+  font-size: 44px;
+  font-weight: 900;
+  color: white;
+}
+.maintextsec  p{
+  color:#9C9C9C;
+  font-size: 18px;
+}
+
+.maintextsec button{
+  height: 63px;
+  width: 50%;
+  font-size: 20px;
+  margin-top: 20px;
+  box-shadow: 2px 2px 8px #3F8E00;
+  border-radius: 5px;
+  color: white;
+  background-color: #62BA1B;
+}
+.accountlinks{
+  height: 60px;
+  width: 350px;
+  margin-top: 10px;
+  /* background-color: aliceblue; */
+  display: flex;
+  justify-content:flex-start;
+  gap: 40px;
+  align-items: center;
+}
+
+.accountlinks li{
+  list-style: none;
+  font-size: 30px;
+  color:#9C9C9C;
+
+}
+.mainpicsec{
+  height: 350px;
+ width: 350px;
+ border: 1px solid white;
+ background-image: url(../../images//pic.png);
+ background-size: cover;
+ background-position:center;
+ border-radius: 50%;
+ /* background-color: #9C9C9C; */
+}
+
+
+@media only screen and (max-width:468px){
+  .main{
+    /* display: flex; */
+    flex-direction: column-reverse;
+    
+  }
+  .maintextsec{
+    /* padding-left: 80px; */
+    height: 350px;
+    width: 300px;
+  }
+  .maintextsec span{
+    font-size: 25px;
+  }
+  .maintextsec p{
+    /* margin-right: 50px; */
+  }
+  .maintextsec button{
+    margin-top: 20px;
+  }
+  
+  .mainpicsec{
+    height: 250px;
+    width: 70%;
   }
 }
 
-body {
-  color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
-}
-
-@layer utilities {
-  .text-balance {
-    text-wrap: balance;
+@media only screen and (min-width:468px) and (max-width:768px){
+  .main{
+    flex-direction: column-reverse;
+  }
+  .maintextsec{
+    width: 300px;
   }
 }
+
+
+/* .pic{
+  height: 600px;
+  width: 350px;
+  border-radius: 50%;
+} */
+
+
+
+
+
+
+
+
+/* MAIN SECTION PART  end*/
+
