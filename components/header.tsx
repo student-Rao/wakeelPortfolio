@@ -1,5 +1,5 @@
-import Image from "next/image"
-import portfoliologo from "../images/portfoliologo.png"
+// import Image from "next/image"
+// import portfoliologo from "../images/portfoliologo.png"
 import Link from "next/link"
 export default function Header() {
     return (

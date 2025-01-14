@@ -1,7 +1,7 @@
-import Image from "next/image";
+// import Image from "next/image";
 import Link from "next/link";
-import pic from '../../images/pic.png'
-import { link } from "fs";
+// import pic from '../../images/pic.png'
+// import { link } from "fs";
 export default function Home() {
   return (
     

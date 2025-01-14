@@ -30,6 +30,8 @@
 
 .navButtons li:first-child{
   margin-right: auto;
+  color:#62BA1B;
+  /* font-size: 100px; */
 }
 
 #menuicon{
