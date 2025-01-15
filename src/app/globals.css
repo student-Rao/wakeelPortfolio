@@ -191,3 +191,15 @@
 
 /* MAIN SECTION PART  end*/
 
+
+/* CV PAGE  CSS */
+.maincv{
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;}
+
+.cvdiv{
+
+}

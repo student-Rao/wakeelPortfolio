@@ -12,8 +12,10 @@ export default function Home() {
 />
     <div className="maintextsec">
       <span>Rao Wakeel</span>
-      <p>I am a student at GIAIC, where I have studied HTML, CSS, and TypeScript. I am currently learning about  Next, JS and I am developed a few projects using Next.JS</p>
+      <p>I am a student at GIAIC,where I have studied HTML, CSS, and TypeScript. I am currently learning about  Next, JS and I am developed a few projects using Next.JS</p>
+      <Link href={"cv"}>
       <button><b>Download CV</b></button>
+      </Link>
       <div className="accountlinks">
         <li><Link href={'https://www.linkedin.com/in/rao-wakeel-445847318/'} target="_blank" ><i className="ri-linkedin-box-fill"></i></Link></li>
         <li><Link href={'https://www.facebook.com/profile.php?id=100087208187542'} ><i className="ri-facebook-circle-fill"></i></Link></li>
